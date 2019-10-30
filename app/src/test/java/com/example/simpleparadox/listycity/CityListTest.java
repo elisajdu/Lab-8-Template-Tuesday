@@ -100,4 +100,12 @@ class CityListTest {
 
         assertEquals(0, cityList.countCities());
     }
+
+    @Test
+    void testPass() {
+        CityList cityList = mockCityList();
+        cityList.delete(mockCity());
+
+        assertEquals(0, cityList.countCities());
+    }
 }
